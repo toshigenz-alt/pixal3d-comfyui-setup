@@ -30,7 +30,7 @@
 2. รอ build เสร็จ → `C:\ComfyUI\run_nvidia_gpu.bat` (โมเดล ~30GB โหลดตอนรันครั้งแรก)
 
 **ทาง B — copy โฟลเดอร์ (เร็วกว่าถ้ามี env อยู่แล้ว):**
-1. copy โฟลเดอร์ `ComfyUI` ทั้งอันไปเครื่องใหม่
+1. copy โฟลเดอร์ `ComfyUI` ทั้งอันไปเครื่องใหม่ (สำหรับคนที่มีโฟลเดอร์แบบ offline ที่พร้อมใช้ ไม่ได้มีให้ทาง online -> online ให้ใช้แบบ A)
 2. รัน `setup_new_machine.bat`
 3. รัน `run_nvidia_gpu.bat` → http://127.0.0.1:8188
 
