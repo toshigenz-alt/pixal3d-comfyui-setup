@@ -1,5 +1,7 @@
 # Pixal3D-ComfyUI — Setup & Migration Scripts
 
+> Reproducible Windows setup scripts for Pixal3D-ComfyUI (image-to-3D) — RTX 4090/4080 working stack + RTX 50xx Blackwell builder. Torch 2.10+cu130, prebuilt CUDA wheels, no manual compiling.
+
 สคริปต์/คู่มือสำหรับติดตั้ง **Pixal3D-ComfyUI** (image-to-3D ของ TencentARC บน ComfyUI) ที่ทดสอบใช้งานได้จริงบน **RTX 4090 / Windows 11**
 
 > repo นี้เก็บแค่ "สูตรติดตั้ง" — **ไม่มีโมเดลหรือ binary** (โมเดล ~30GB โหลดจาก Hugging Face เอง หรือ copy ผ่าน SSD)
