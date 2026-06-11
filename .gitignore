@@ -1,0 +1,30 @@
+# เก็บเฉพาะสคริปต์/คู่มือ — กันไฟล์หนัก/ความลับหลุด
+
+# โมเดล / binary / env (ห้ามขึ้น git)
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.whl
+python_embeded/
+venv/
+models/
+output/
+input/
+temp/
+__pycache__/
+*.pyc
+
+# ความลับ
+*.token
+.hf_token
+.env
+secrets*
+*api_key*
+
+# ระบบ
+.DS_Store
+Thumbs.db
+*.log
