@@ -15,6 +15,7 @@
 ## ไฟล์ในนี้
 | ไฟล์ | ใช้ทำอะไร |
 |---|---|
+| `build_env_4090.ps1` + `*.bat` | **build ใหม่จากศูนย์** สำหรับ **RTX 4090/4080 (cp313)** — clone repo แล้วรันได้เลย **ไม่ต้อง copy 35GB** (โหลด ComfyUI portable + ลงทุกอย่าง, โมเดล auto-download) |
 | `setup_new_machine.ps1` + `*.bat` | ย้ายไปเครื่อง **สเปคเดียวกัน (4090/4080)** — รันหลัง copy โฟลเดอร์ ComfyUI มา (ติดตั้ง Git + ตั้ง env + verify) |
 | `verify_env.py` | ตรวจ torch / CUDA wheels / triton compile |
 | `build_env_cp312_blackwell.ps1` + `*.bat` | **build ใหม่** สำหรับ **RTX 50xx (Blackwell)** เป็น Python 3.12 + NATTEN → ใช้ **strict NAF** ได้ |
@@ -22,9 +23,15 @@
 | `submit_pixal3d_test.py` | ทดสอบรัน workflow ผ่าน API ให้ได้ `.glb` |
 | `INSTALL_NOTES.md` | คู่มือเต็ม + ค่าตั้ง workflow + ตัวแปรที่ปรับคุณภาพ |
 
-## ย้ายเครื่องเร็วๆ (4090/4080)
+## ติดตั้ง RTX 4090/4080 — เลือกได้ 2 ทาง
+
+**ทาง A — build ใหม่จากศูนย์ (ไม่ต้อง copy 35GB):**
+1. clone repo นี้ → ดับเบิลคลิก `build_env_4090.bat`
+2. รอ build เสร็จ → `C:\ComfyUI\run_nvidia_gpu.bat` (โมเดล ~30GB โหลดตอนรันครั้งแรก)
+
+**ทาง B — copy โฟลเดอร์ (เร็วกว่าถ้ามี env อยู่แล้ว):**
 1. copy โฟลเดอร์ `ComfyUI` ทั้งอันไปเครื่องใหม่
-2. รัน `setup_new_machine.bat` (ในโฟลเดอร์ Er)
+2. รัน `setup_new_machine.bat`
 3. รัน `run_nvidia_gpu.bat` → http://127.0.0.1:8188
 
 ## RTX 50xx (Blackwell) + NAF
